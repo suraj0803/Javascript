@@ -1,0 +1,36 @@
+<!--Sets-->
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Sets</title>
+   </head>
+     <body>
+         <script>
+
+               var _set = new Set()
+               _set.add(3).add(5).add(7).add(3);
+               console.log(_set);
+               console.log(_set.has(7));
+               console.log(_set.size);
+               console.log(_set.delete(5));
+               console.log(_set);
+
+               for(var entry of _set.values()){
+               	   console.log(entry);
+               }
+
+               function test(x){
+               	  if(x == "l"){
+               	  	   console.log("Found it!");
+               	  }else{
+               	  	console.log("Nope!");
+               	  }
+               }
+
+
+               var set1 = new Set([1,1,1,3,3,4,5])
+               set1.forEach(test)
+              
+         </script>
+     </body>
+</html>

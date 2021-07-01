@@ -1,0 +1,27 @@
+<!--String Methods and Manipulation-->
+<html>
+ <head>
+     <meta charset="utf-8">
+     <title>String Methods and Manipulation</title>
+ </head>
+ <body>
+    <h1 id="header">Type Something</h1>
+    <input type="text"  id="inp"/>
+    <button onclick="pressed()">Click</button>
+    <p id="output"></p>
+
+    <script>
+       function pressed()
+       {
+       	var text = document.getElementById("inp").value;
+       	output.innerHTML = text.toUpperCase();
+       	output.innerHTML = text.startsWith("$");// text start with $ then it is true otherwise false  "$hel"
+       	output.innerHTML = text.endsWith("$");// text ends with $ then it is true otherwise false  "hel$" but if spaces are there then false
+       	output.innerHTML = text.trim.endsWith("$");// Using trim will remove all the spaces 
+       	// how long the string is
+       	output.innerHTML = text.trim();
+       	console.log(text.length);
+       }
+    </script>
+ </body>
+</html>

@@ -1,0 +1,34 @@
+<!--Switch Statements-->
+<html>
+  <head>
+     <meta charset="utf-8">
+     <title>Switch Statements</title>
+  </head>
+
+
+  <body>
+     <h1 id="header">Hello!</h1>
+     <input type="text" id="inp"/>
+     <button onclick="pressed()">Click</button>
+     <script>
+        function pressed(){
+          var text = document.getElementById("inp").value;
+          switch(text){
+          	case "red":
+          	    document.getElementById("header").style.color = "red";
+          	    break;
+          	case "yellow":
+          	    document.getElementById("header").style.color = "yellow";
+          	    break;
+          	case "blue":
+          	    document.getElementById("header").style.color = "blue";
+          	    break;
+          	default:
+          	    document.getElementById("header").style.color = "black";
+          	    break;
+          }
+      }
+         
+     </script>
+  </body>
+</html>

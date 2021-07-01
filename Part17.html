@@ -1,0 +1,44 @@
+<!--Maps-->
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Maps</title>
+   </head>
+     <body>
+         <script>
+
+               var mp = new Map(
+                   [
+                   ["t",5],
+                   ["v",8]
+                   ])
+               mp.set("t",9);
+               mp.set(3,"hello");
+               console.log(mp.get(4));
+               console.log(mp.size);
+               mp.delete(6);
+               console.log(mp.size);
+               console.log(mp.has(6));    
+
+               for(var entry of mp){
+               	   console.log(entry);
+               }
+            
+
+               var mp = new Map()
+               str = "this is my new string hello";
+
+               for(var letter of str){
+               	  if(mp.has(letter)){
+               	  	mp.set(letter, mp.get(letter)+1);
+               	  }else{
+               	  	mp.set(letter, 1);
+               	  }
+               }
+               console.log(mp);
+
+
+              
+         </script>
+     </body>
+</html>
